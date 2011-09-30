@@ -109,19 +109,20 @@ function switchState()
 	}
 }
 
-function setState(color,text)
+function setState(color,text,icon)
 {
 	chrome.browserAction.setBadgeBackgroundColor({color:color});
 	chrome.browserAction.setBadgeText({text:text});
+	chrome.browserAction.setIcon({path:icon});
 }
 
 function showState()
 {
 	switch(getState())
 	{
-		case 0:setState([0, 200, 0, 100],"0");break;
-		case 1:setState([255, 0, 0, 100],"1");break;
-		case 5:setState([255, 0, 0, 100],"1");localStorage["State"] =1;break;
+		case 0:setState([0, 200, 0, 100],"0","./images/logo.png");break;
+		case 1:setState([255, 0, 0, 100],"1","./images/logo_blue.png");break;
+		case 5:setState([255, 0, 0, 100],"1","./images/logo_blue.png");localStorage["State"] =1;break;
 		case 9:setState([0, 0, 200, 100],"?");break;
 		default:setState([255, 255, 255, 255],"X");break;
 	}

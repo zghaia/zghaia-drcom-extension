@@ -21,7 +21,7 @@ function closeAlert()
 }
 
 function openAlert(u, w, h) {
-	var l = 2 * (screen.width - w) / 5;
+	var l = (screen.width - w) / 2;
 	var t = (screen.height - h) / 3;
 	var s = 'width=' + w + ', height=' + h + ', top=' + t + ', left=' + l;
 	s += ', toolbar=no, scrollbars=no, menubar=no, location=no, resizable=no';
@@ -34,7 +34,7 @@ function showAlert()
 		var flag=(windows.length==0)&&(getState()==1); 
 	    if(flag)
 	    {
-            openAlert('alert.html',200,100);
+            openAlert('alert.html',350,250);
         }
 	});
 }
