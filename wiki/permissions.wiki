@@ -3,13 +3,13 @@
 
 = Introduction =
 
-  1. "background",
+1. "background",
 
-  2. "tabs",
+2. "tabs",
 
-  3."notifications",
+3."notifications",
 
-  4."http://*/"
+4."http://*/"
 
 
 = Details =
