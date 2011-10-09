@@ -1,10 +1,14 @@
+#labels 关于扩展的权限要求说明
 #关于扩展的权限要求说明
 
 = Introduction =
 
   1. "background",
+
   2. "tabs",
+
   3."notifications",
+
   4."http://*/"
 
 
